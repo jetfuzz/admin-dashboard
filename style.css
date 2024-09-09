@@ -27,50 +27,71 @@
   }
 
 
+@font-face {
+  font-family: "roboto-medium";
+  src: url(roboto-medium-webfont.woff), url(roboto-medium-webfont.woff2);
+}
 
 html {
-    background-color: #e2e8f0;
+  background-color: #e2e8f0;
+  font-family: "roboto-medium";
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.7fr 5fr;
 }
 
 .sidebar {
-    background-color: #1992d4;
-    color: white;
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
-    min-height: 100vh;
+  background-color: #1992d4;
+  color: white;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  min-height: 100vh;
+}
+
+.sidebar-title {
+  margin: 20px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.nav {
+  padding-bottom: 20px;
+}
+
+li {
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .header {
-    padding: 20px;
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    background-color: white;
+  padding: 20px;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background-color: white;
 }
 
 .header > input {
-    height: 20px;
-    border-radius: 8px;
-    background-color: #e2e8f0;
-    border: none;
+  height: 20px;
+  border-radius: 8px;
+  background-color: #e2e8f0;
+  border: none;
 }
 
 .main-content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 15px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
 }
 
 .projects {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .projects-title {
@@ -78,9 +99,15 @@ html {
 }
 
 .card {
-    background-color: white;
+  background-color: white;
+  margin: 15px;
+  padding: 8px;
 }
 
 .card > .title {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
 }
