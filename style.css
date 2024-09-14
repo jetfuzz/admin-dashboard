@@ -40,7 +40,7 @@ html {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  
 }
 
 .sidebar {
@@ -55,6 +55,7 @@ html {
   margin: 20px;
   cursor: pointer;
   font-size: 2.1em;
+  padding-left: 10px;
 }
 
 .nav {
@@ -99,7 +100,7 @@ li {
 .account-section {
   display: grid;
   grid-template-columns: 40px 40px 4fr;
-  gap: 10px;
+  gap: 25px;
   padding-left: 90px;
 }
 
@@ -126,7 +127,7 @@ li {
 .header-account-name {
   display: flex;
   align-items: center;
-  font-size: 1.02em;
+  font-size: 1.1em;
 }
 
 .user-info {
@@ -155,10 +156,12 @@ li {
 .header-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  padding-right: 75px;
+  gap: 5px;
+  padding-right: 50px;
   padding-top: 20px;
-  margin-bottom: 10px;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .header-buttons > button {
@@ -168,7 +171,8 @@ li {
   color: white;
   height: 35px;
   font-size: 1em;
-  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
 }
 
 .header-buttons > button:hover {
@@ -179,32 +183,79 @@ li {
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 15px;
+  gap: 20px;
 }
 
 .projects {
   display: grid;
-  column-gap: 15px;
-  row-gap: 15px;
+  column-gap: 10px;
+  row-gap: 25px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 30px 1fr 1fr 1fr 1fr;
 }
 
-.projects-title {
+.projects-title, .announcements-title, .trending-title {
     grid-column: 1 / 3;
-    padding-left: 15px;
     padding-top: 15px;
+    font-size: 1.3em;
+}
+
+.announcements-title {
+  padding-top: 20px;
+}
+
+.projects-title {
+  padding-left: 22px;
 }
 
 .card {
   background-color: white;
-  margin-left: 15px;
-  border-radius: 8px;
-  padding: 20px;
+  margin-left: 20px;
+  border-radius: 12px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  color: #717171;
+  display: flex;
+  flex-direction: column;
+  border-left: 7px solid #1992d4;
 }
 
 .card > .title {
   font-weight: bold;
+  color: black;
+  font-size: 1.1em;
+}
+
+.project-icons {
+  display: flex;
+  padding: 8px;
+  padding-top: 12px;
+  gap: 18px;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.star-icon, .eye-icon, .trash-can {
+  height: 30px;
+}
+
+.star-icon:hover, .eye-icon:hover, .trash-can:hover {
+  cursor: pointer;
+}
+
+.sidebar-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  color: #717171;
+  font-size: 0.9em;
+}
+
+.sidebar-card > .title {
+  color: black;
+  font-size: 1em;
 }
 
 ul {
