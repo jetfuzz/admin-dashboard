@@ -281,7 +281,7 @@ li {
 .sidebar-card {
   background-color: white;
   border-radius: 12px;
-  padding: 20px;
+  padding: 30px;
   color: #717171;
   font-size: 0.9em;
   margin-right: 20px;
@@ -290,7 +290,13 @@ li {
 
 .sidebar-card > .title {
   color: black;
-  font-size: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.sidebar-card > hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .trending-account {
@@ -302,6 +308,15 @@ li {
   height: 40px;
   grid-template-columns: 1 / 2;
   grid-template-rows: 1 / 3;
+  margin: auto;
+}
+
+.trending-user {
+
+}
+
+.trending-info {
+  grid-column: 2 / 3;
 }
 
 ul {
